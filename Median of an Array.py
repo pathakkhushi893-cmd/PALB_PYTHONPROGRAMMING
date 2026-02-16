@@ -1,0 +1,11 @@
+class Solution:
+    def findMedian(self, arr):
+        n = len(arr)
+        arr.sort()
+        if n % 2 == 1:
+            return arr[n // 2]
+      
+        else:
+            mid1 = arr[n // 2]
+            mid2 = arr[n // 2 - 1]
+            return (mid1 + mid2) / 2
